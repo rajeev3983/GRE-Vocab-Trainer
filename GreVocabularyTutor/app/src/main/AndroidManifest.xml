@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.grevocabtutor.grevocabularytutor" >
+
+    <application
+        android:name=".main.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".main.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Deck.DeckList"
+            android:label="@string/title_activity_deck_list" >
+        </activity>
+        <activity
+            android:name=".word.ShowWordlist"
+            android:label="@string/title_activity_show_wordlist" >
+        </activity>
+        <activity
+            android:name=".word.ShowWord"
+            android:label="@string/title_activity_show_word" >
+        </activity>
+        <activity
+            android:name=".learn.LearnDeck"
+            android:label="@string/title_activity_learn_deck" >
+        </activity>
+        <activity
+            android:name=".practice.PracticeDeck"
+            android:label="@string/title_activity_practice_deck" >
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

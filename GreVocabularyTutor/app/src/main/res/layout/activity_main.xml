@@ -1,0 +1,130 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="0px"
+            android:layout_marginRight="0px"
+            android:onClick="learnOnClick"
+            android:background="@color/background_color"
+            >
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/learn"
+                android:fadingEdgeLength="0dp"
+                android:focusable="false"
+                />
+            <Button
+                android:id="@+id/learn_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/learn_button"
+
+                android:fontFamily="droid-sans-mono-regular"
+                android:textColor="@color/white"
+                android:background="@color/background_color"
+                android:fadingEdgeLength="0dp"
+                android:clickable="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/background_color"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="0px"
+            android:layout_marginRight="0px"
+            android:onClick="practiceOnClick"
+            >
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/practice" />
+            <Button
+                android:id="@+id/practice_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/practice_button"
+                android:fontFamily="droid-sans-mono-regular"
+                android:clickable="false"
+                android:textColor="@color/white"
+                android:background="@color/background_color"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/background_color"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="0px"
+            android:layout_marginRight="0px"
+            android:onClick="wordlistOnClick"
+            >
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/list" />
+            <Button
+                android:id="@+id/wordlist_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wordlist_button"
+                android:fontFamily="droid-sans-mono-regular"
+                android:clickable="false"
+                android:textColor="@color/white"
+                android:background="@color/background_color"
+                />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/background_color"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginTop="10px"-->
+            <!--android:layout_marginLeft="0px"-->
+            <!--android:layout_marginRight="0px"-->
+            <!-->-->
+            <!--<Button-->
+                <!--android:id="@+id/previous_tests_button"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/previous_tests_button"-->
+                <!--android:fontFamily="droid-sans-mono-regular"-->
+                <!--android:background="@color/background_color"-->
+                <!--android:textColor="@color/white"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</ScrollView>
